@@ -182,11 +182,12 @@ All dependencies are listed in `requirements.txt` and will be installed automati
 ---
 
 ## Note
-Please note that this code has not been peer-reviewed. 
 
-If you wish to use it, please contact the author, Dr. Jia Qi. jq.physics@hotmail.com
+Please note that this code has not been peer-reviewed.  
+If you intend to use it, please contact the author, Dr. Jia Qi (jq.physics@hotmail.com).  
 
-The essential model file is not included in this project. Please contact Dr. Qi Jia (jq.physics@hotmail.com) to request access.
-## 
+The essential model file is not included in this project. Please reach out to Dr. Jia Qi (jq.physics@hotmail.com) to request access.
 
-Special thanks to: Dr. Jiao Li, Dr. Jiadong Lee, Dr. Mingjie Jian, and Dr. Yangping Luo for their help with this project.
+## Acknowledgements
+
+Special thanks to Dr. Jiao Li, Dr. Jiadong Lee, Dr. Mingjie Jian, and Dr. Yangping Luo for their assistance with this project.
