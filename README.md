@@ -8,20 +8,25 @@ Given three stellar parameters — **effective temperature (Teff)**, **surface g
 
 ## 📦 Installation
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/tlusty-nn.git
 cd tlusty-nn
 ```
 
-> **Note on large files**
-> The pretrained model weight (`best_model.pt`, ~1 GB) exceeds GitHub's normal file-size limit (100 MB). You have three options:
-> 1. **Git LFS** – if the repository is configured with Git LFS, run `git lfs pull` after cloning.
-> 2. **Release asset** – download `best_model.pt` from the GitHub Releases page and place it under `tlustynn/checkpoints/`.
-> 3. **Manual copy** – if you already have the file locally, copy it to `tlustynn/checkpoints/best_model.pt`.
+### Note
 
-### 2. Install into your Python environment
+Please note that this code has not been peer-reviewed.  
+
+> If you intend to use it, please contact the author, Dr. Jia Qi (jq.physics@hotmail.com).  
+
+> The pretrained model weight (`best_model.pt`, ~1 GB) exceeds GitHub's normal file-size limit (100 MB). You have three options:
+
+> The essential model file is not included in this project. Please reach out to Dr. Jia Qi (jq.physics@hotmail.com) to request access.
+
+
+### Install into your Python environment
 
 ```bash
 pip install .
@@ -86,7 +91,7 @@ create_ff_model(
 
 
 
-## 📄 Output formats
+##  Output formats
 
 ### CSV format
 
@@ -172,16 +177,9 @@ tlusty-nn/
 - NumPy, Pandas, scikit-learn, Matplotlib, tqdm
 
 All dependencies are listed in `requirements.txt` and will be installed automatically with `pip install`.
-
 ---
 
-## Note
-
-Please note that this code has not been peer-reviewed.  
-If you intend to use it, please contact the author, Dr. Jia Qi (jq.physics@hotmail.com).  
-
-The essential model file is not included in this project. Please reach out to Dr. Jia Qi (jq.physics@hotmail.com) to request access.
 
 ## Acknowledgements
 
-Special thanks to Dr. Jiao Li, Dr. Jiadong Lee, Dr. Mingjie Jian, and Dr. Yangping Luo for their assistance with this project.
+Thanks to Dr. Jiao Li, Dr. Jiadong Lee, Dr. Mingjie Jian, Dr. Yangping Luo, Dr. Chenyu He , Dr Zhihong He and Dr. Xiaodian Chen for their assistance with this project.
