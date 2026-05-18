@@ -1,8 +1,8 @@
 # TLUSTY NN
 
-Physics-Informed Neural Network (PINN) for fast prediction of TLUSTY stellar atmosphere models.
+Neural Network for fast prediction of TLUSTY stellar atmosphere models.
 
-Given three stellar parameters — **effective temperature (Teff)**, **surface gravity (logg)** and **metallicity ([M/H])** — the network predicts the full 50-layer atmospheric structure (temperature, electron density, mass density and 55 level populations) in a fraction of a second.
+Given three stellar parameters — effective temperature (Teff), surface gravity (logg) and helium abundance (log(n_He / n_H)) — the network predicts the full 50-layer atmospheric structure (temperature, electron density, mass density, and 55 level populations) in a fraction of a second.
 
 ---
 
@@ -21,9 +21,8 @@ Please note that this code has not been peer-reviewed.
 
 > If you intend to use it, please contact the author, Dr. Jia Qi (jq.physics@hotmail.com).  
 
-> The pretrained model weight (`best_model.pt`, ~1 GB) exceeds GitHub's normal file-size limit (100 MB). You have three options:
-
-> The essential model file is not included in this project. Please reach out to Dr. Jia Qi (jq.physics@hotmail.com) to request access.
+> The pretrained model weight (`best_model.pt`, ~1 GB) exceeds GitHub's normal file-size limit (100 MB).
+  Please reach out to Dr. Jia Qi (jq.physics@hotmail.com) to request access.
 
 
 ### Install into your Python environment
