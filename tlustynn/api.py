@@ -42,16 +42,17 @@ def write_tlusty_model7(filename, model_data):
         tau_values = df['tau'].values
         for i in range(0, n_depth, 6):
             line_values = tau_values[i:i+6]
-            line_str = "".join(f" {val:13.6E}" for val in line_values)
+            line_str = "".join(f"{val:13.6E}" for val in line_values)
             f.write(line_str + "\n")
         
         # Write all other parameters for each depth
         for depth_idx in range(n_depth):
-            row_data = df.iloc[depth_idx, 2:].values  # Skip teff, logg, mh
+            # Skip tau column (col 0), keep T, ne, rho, level_1 ... level_55
+            row_data = df.iloc[depth_idx, 1:].values
             
-            for i in range(0, n_params, 6):
-                line_values = row_data[i:i+6]
-                line_str = "  " + "".join(f" {val:13.6E}" for val in line_values)
+            for i in range(0, n_params, 5):
+                line_values = row_data[i:i+5]
+                line_str = "".join(f" {val:13.6E}" for val in line_values)
                 f.write(line_str + "\n")
 
 
