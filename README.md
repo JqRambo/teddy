@@ -1,7 +1,7 @@
-### Teddy is all you need
+# Teddy is all you need
 
 
-# TLUSTY NN
+## TLUSTY NN
 
 Neural Network for fast prediction of TLUSTY stellar atmosphere models.
 
