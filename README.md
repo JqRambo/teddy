@@ -191,7 +191,7 @@ The neural network model is trained and validated within the following stellar p
 | Parameter | Symbol | Range | Units |
 |-----------|--------|-------|-------|
 | Effective temperature | `Teff` | 10,000 – 100,000 | K |
-| Surface gravity | `logg` | 1.5 – 9.0 | log10(cm/s²) |
+| Surface gravity | `logg` | 1.5 – 10.0 | log10(cm/s²) |
 | Helium abundance | `log(n_He / n_H)` | -4.0 – 0.0 | dex |
 
 ### Notes
