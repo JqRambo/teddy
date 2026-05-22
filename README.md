@@ -1,3 +1,11 @@
+# multimode-delta-sct
+A python program to identify multi-mode delta scuti
+
+
+
+
+# Please Cite
+
 # TLUSTY NN
 
 Neural Network for fast prediction of TLUSTY stellar atmosphere models.
