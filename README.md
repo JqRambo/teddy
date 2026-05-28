@@ -7,11 +7,45 @@ Given three stellar parameters — effective temperature (Teff), surface gravity
 
 ## Installation
 
+### Prerequisites
+
+- **Fortran compiler**: The underlying TLUSTY code is written in Fortran, so a Fortran compiler is required.
+  - On **Ubuntu / Debian**: `sudo apt-get install gfortran`
+  - On **macOS**: `brew install gcc`
+  - On other systems, install `gfortran` via your package manager.
+
 ### Clone the repository
 
 ```bash
 git clone https://github.com/JqRambo/tlustynn.git
 cd tlusty-nn
+```
+
+### Install TLUSTY (optional)
+
+If you do not already have TLUSTY installed locally, run `install_tlusty.py` to automatically download, configure, and compile the TLUSTY Fortran package:
+
+```bash
+# Default installation path: /home/ubuntu/tlusty
+python install_tlusty.py
+
+# Or specify a custom installation path
+python install_tlusty.py /path/to/tlusty
+```
+
+The script will:
+
+1. Check for `gfortran`
+2. Download the required TLUSTY packages from the official website
+3. Extract them to the specified directory
+4. Set environment variables in your `~/.bashrc` (`TL208`, `TLUSTY`, `LINELIST`, `IRON`, `OPTABLES`)
+5. Compile the TLUSTY and SYNSPEC executables
+6. Run basic tests
+
+After installation, reload your shell configuration:
+
+```bash
+source ~/.bashrc
 ```
 
 ### Important Notes
